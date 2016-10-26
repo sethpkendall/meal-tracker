@@ -5,13 +5,13 @@ import { Food } from './food.model';
   selector: 'food-list',
   template: `
     <h2>Foods:
-    <small>
-      <select (change)="filterFoods($event.target.value)" class='pull-right'>
-        <option value='all'>Show All</option>
-        <option value='low'>Show Low-calorie</option>
-        <option value='high'>Show High-calorie</option>
-      </select>
-    </small>
+      <small>
+        <select (change)="filterFoods($event.target.value)" class='pull-right'>
+          <option value='all'>Show All</option>
+          <option value='low'>Show Low-calorie</option>
+          <option value='high'>Show High-calorie</option>
+        </select>
+      </small>
     </h2>
     <div *ngFor="let food of childFoodsList | foodFilter:foodPick">
       <p (click)="clickedFood(food)">{{food.name}}({{food.calories}})- {{food.details}}</p>

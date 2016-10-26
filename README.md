@@ -21,15 +21,9 @@ _This product is designed to take in details and calories for a food and store t
 * _Open a command prompt and navigate to the cloned project directory_
 * _Run command "npm install"_
 * _Run command "bower install"_
-* _Acquire an API key from a personal github account_
-  * _On a github profile page go to "Settings" from the drop-down menu at the top right_
-  * _Click "Personal Access Tokens" from the sidebar_
-  * _Scroll to the bottom of the options page and click the button labeled: "Generate New Token"_
-  * _Copy the API key to the clipboard_
-* _Return to the cloned project directory and create a new filed called ".env"_
-* _Paste your API key to this file with the following format: 'exports.apiKey = "{your_key_here}";'_
-* _Save the .env file, navigate to the project directory in a command prompt, and type "gulp serve"_
-* _Project will open in a browser window_
+* _Run command "gulp build"_
+* _Run command "gulp serve"_
+* _Project will Render in a browser window_
 
 ## Licensing
 
