@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { Food } from './food.model';
 
 @Component({
@@ -19,6 +19,8 @@ import { Food } from './food.model';
       <div class='col-xs-6'>
         <food-info
             [clickedFood]="clickedFood"
+            (editFormSender)="endEdit($event)"
+            ></food-info>
       </div>
     </div>
   `
@@ -34,8 +36,11 @@ export class AppComponent{
   addFood(loggedFood: Food) {
     this.foodList.push(loggedFood);
   }
-  clickedFood:Food = null;
+  clickedFood: Food = null;
   showInfo(infoToShow:Food){
     this.clickedFood = infoToShow;
+  }
+  endEdit(){
+    this.clickedFood = null;
   }
 }
