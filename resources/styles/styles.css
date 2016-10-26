@@ -1,3 +1,11 @@
-h1 {
+h1{
   font-family: 'Righteous', cursive;
+}
+
+body{
+  background-color: #19bdff;
+}
+
+div{
+  color:white;
 }

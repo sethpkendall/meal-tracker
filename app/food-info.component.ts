@@ -5,12 +5,13 @@ import { Food } from './food.model';
   selector: "food-info",
   template:`
     <div *ngIf="clickedFood">
-      <h3>Edit Food</h3>
+      <h2>Edit Food</h2>
       <div class='form-group'>
         <input class='form-control' type='text' [(ngModel)]="clickedFood.name">
         <input class='form-control' type='number' [(ngModel)]="clickedFood.calories">
         <input class='form-control' type='text' [(ngModel)]="clickedFood.details">
-        <button (click)="endEdit()">Done</button>
+        <br>
+        <button (click)="endEdit()"class="btn btn-primary">Done</button>
       </div>
     </div>
   `

@@ -27,11 +27,7 @@ import { Food } from './food.model';
 })
 
 export class AppComponent{
-  public foodList: Food[] = [
-    new Food('Fries', 501, "Nice and greasy"),
-    new Food('Carrots with Ranch', 200, "Healthy and boring with a compromise"),
-    new Food('Southwest Salad', 400, "Lettuce, black beans, tortilla strips, corn and cilantro dressing with chicken on top (grilled)")
-  ];
+  public foodList: Food[] = [];
 
   addFood(loggedFood: Food) {
     this.foodList.push(loggedFood);

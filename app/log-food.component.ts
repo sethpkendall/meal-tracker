@@ -16,7 +16,7 @@ import { Food } from './food.model';
           nameHere.value = '';
           caloriesHere.value = '';
           detailsHere.value='';
-          ">Add</button>
+          " class="btn btn-primary">Add</button>
       </div>
   `
 })
